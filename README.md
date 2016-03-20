@@ -19,8 +19,8 @@ lsusbコマンドを使用して各デバイスの接続ポート等を取得す
     /:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=uhci_hcd/2p, 12M
     /:  Bus 03.Port 1: Dev 1, Class=root_hub, Driver=uhci_hcd/2p, 12M
         |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 12M
-            |__ Port 1: Dev 16, If 0, Class=Human Interface Device, Driver=, 1.5M
-            |__ Port 1: Dev 16, If 1, Class=Human Interface Device, Driver=, 1.5M
+            |__ Port 1: Dev 17, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+            |__ Port 1: Dev 17, If 1, Class=Human Interface Device, Driver=usbhid, 1.5M
             |__ Port 4: Dev 4, If 0, Class=Video, Driver=uvcvideo, 12M
             |__ Port 4: Dev 4, If 1, Class=Video, Driver=uvcvideo, 12M
             |__ Port 4: Dev 4, If 2, Class=Audio, Driver=snd-usb-audio, 12M
@@ -28,8 +28,8 @@ lsusbコマンドを使用して各デバイスの接続ポート等を取得す
     /:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=uhci_hcd/2p, 12M
     /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/8p, 480M
         |__ Port 2: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
-            |__ Port 1: Dev 20, If 0, Class=Human Interface Device, Driver=, 1.5M
-            |__ Port 1: Dev 20, If 1, Class=Human Interface Device, Driver=, 1.5M
+            |__ Port 1: Dev 21, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+            |__ Port 1: Dev 21, If 1, Class=Human Interface Device, Driver=usbhid, 1.5M
             |__ Port 3: Dev 8, If 0, Class=Video, Driver=uvcvideo, 480M
             |__ Port 3: Dev 8, If 1, Class=Video, Driver=uvcvideo, 480M
         |__ Port 4: Dev 4, If 0, Class=Vendor Specific Class, Driver=rt2800usb, 480M
@@ -41,13 +41,13 @@ lsusbコマンドを使用して各デバイスの接続ポート等を取得す
     Bus 001 Device 005: ID 0951:1606 Kingston Technology Eee PC 701 SD Card Reader [ENE UB6225]
     Bus 001 Device 004: ID 07aa:0042 Corega K.K. CG-WLUSB300GNM
     Bus 001 Device 008: ID 056e:7007 Elecom Co., Ltd 
-    Bus 001 Device 020: ID 0c45:7401 Microdia TEMPer Temperature Sensor
+    Bus 001 Device 021: ID 0c45:7401 Microdia TEMPer Temperature Sensor
     Bus 001 Device 002: ID 05e3:0608 Genesys Logic, Inc. Hub
     Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
     Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 003 Device 004: ID 046d:08ca Logitech, Inc. Mic (Fusion)
-    Bus 003 Device 016: ID 0c45:7401 Microdia TEMPer Temperature Sensor
+    Bus 003 Device 017: ID 0c45:7401 Microdia TEMPer Temperature Sensor
     Bus 003 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub
     Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
