@@ -1,10 +1,10 @@
 # usb_device_list
-USB Device List and search using lsusb command on PHP
+lsusbコマンドを使用して各デバイスの接続ポート等を取得する
 
-# lsusbコマンドを使用して各デバイスの接続ポート等を取得する
+# 動作環境など
 
-  [使用できる環境] PHP Cliとlsusbコマンドが使用できるlinux
-  動作サンプルは sample.php を参照。
+[使用できる環境] PHP Cliとlsusbコマンドが使用できるlinux  
+動作サンプルは sample.php を参照。  
 
 # 設定箇所
 
@@ -12,11 +12,8 @@ USB Device List and search using lsusb command on PHP
     define(PATH_LSUSB_COMMAND,	'/usr/bin/lsusb');	// lsusbコマンドのパス
     define(LSUSB_TREE_INDENT,	4);	// lsusb -t でカスケードされる行の1段分のスペース数
 
-
 # 実行例
-
 ## USBの接続状況
-
     $ lsusb -t
     /:  Bus 05.Port 1: Dev 1, Class=root_hub, Driver=uhci_hcd/2p, 12M
     /:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=uhci_hcd/2p, 12M
@@ -54,11 +51,9 @@ USB Device List and search using lsusb command on PHP
     Bus 003 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub
     Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
-
 こんな具合だとする。
 
 ## サンプル実行結果
-
     $ php sample.php
     -- デバイスを列挙する --
     * デバイス名称: Linux Foundation 1.1 root hub
@@ -131,4 +126,3 @@ USB Device List and search using lsusb command on PHP
     -- 056e:7007 と同じハブに繋がっている 0c45:7401 の最初の１つを取得する --
     デバイス番号: 20
     --
-
