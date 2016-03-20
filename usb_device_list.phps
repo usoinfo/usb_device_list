@@ -267,7 +267,7 @@ class UsbDeviceList
 				$dev->set( UsbDevice::BUS_NUM, $currentbus );
 				$dev->set( UsbDevice::IF_NUM, $ret['if'] );
 				$dev->set( UsbDevice::BUS_PORT_ID, $this->hubstack2id(1) );
-				if( !$this->searchDevice(array(UsbDevice::DEVICE_NUM => $ret['dev'])) ){
+				if( !$this->searchDevice(array(UsbDevice::DEVICE_NUM => $ret['dev'],UsbDevice::BUS_PORT_ID => $this->hubstack2id(1) )) ){
 					$this->devices[]	= $dev;
 				}
 				continue;
