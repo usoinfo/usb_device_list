@@ -41,7 +41,7 @@ if( !$dev1 ){
 	echo "056e:7007 のデバイスはありません。\n";
 } else {
 	$cond	= array(
-		UsbDevice::BUS_PORT_ID	=> $dev->getBusportId(),
+		UsbDevice::BUS_PORT_ID	=> $dev1->getBusportId(),
 	);
 	$dev2	= $usb->searchDevice($cond);
 
